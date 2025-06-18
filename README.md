@@ -41,3 +41,4 @@ To make the segmentation visually understandable, we create a 2D scatter plot:
 - sklearn (KMeans, LabelEncoder)
 
 ## output
+![Image](https://github.com/user-attachments/assets/2abe9299-b541-443f-b720-6c9ffee38c37)

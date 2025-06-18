@@ -23,9 +23,7 @@ Final features used for clustering:
 - Spending Score
 
 ##  Clustering with K-Means
-I use **K-Means Clustering** from `sklearn.cluster`. For simplicity, the number of clusters is set to 3:
-```python
-kmeans = KMeans(n_clusters=3, random_state=0)
+I use **K-Means Clustering** from `sklearn.cluster`. For simplicity, the number of clusters is set to 3
 
 ##  Visualization
 To make the segmentation visually understandable, we create a 2D scatter plot:
@@ -39,4 +37,7 @@ To make the segmentation visually understandable, we create a 2D scatter plot:
 - pandas
 - matplotlib
 - sklearn (KMeans, LabelEncoder)
+
+##output 
+
 

@@ -22,12 +22,12 @@ Final features used for clustering:
 - Annual Income
 - Spending Score
 
-## Clustering with K-Means
+##  Clustering with K-Means
 I use **K-Means Clustering** from `sklearn.cluster`. For simplicity, the number of clusters is set to 3:
 ```python
 kmeans = KMeans(n_clusters=3, random_state=0)
 
-## Visualization
+##  Visualization
 To make the segmentation visually understandable, we create a 2D scatter plot:
 - X-axis: Annual Income (k$)
 - Y-axis: Spending Score (1–100)
@@ -35,10 +35,10 @@ To make the segmentation visually understandable, we create a 2D scatter plot:
 - Each point represents a customer
 - Uses matplotlib for plotting
 
-## Libraries Used
+##  Libraries Used
 - pandas
 - matplotlib
 - sklearn (KMeans, LabelEncoder)
 
-## output
+##  output
 ![Image](https://github.com/user-attachments/assets/2abe9299-b541-443f-b720-6c9ffee38c37)

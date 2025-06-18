@@ -8,7 +8,7 @@ I use the popular **Mall Customer Segmentation dataset**, which includes the fol
 - `Age`: Age of the customer
 - `Annual Income (k$)`: Estimated income
 - `Spending Score (1-100)`: Score assigned based on spending habits
-The dataset is from Kaggle and used in csv format: https://www.kaggle.com/datasets/vjchoudhary7/customer-segmentation-tutorial-in-python
+- The dataset is from Kaggle and used in csv format: https://www.kaggle.com/datasets/vjchoudhary7/customer-segmentation-tutorial-in-python
 
 ##  Data Preprocessing
 Before applying machine learning:

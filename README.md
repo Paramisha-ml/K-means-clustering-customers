@@ -16,6 +16,7 @@ Before applying machine learning:
 - Since `Gender` is a categorical feature, we use `LabelEncoder()` to convert it to numerical format:
   - Female = 0
   - Male = 1
+
 Final features used for clustering:
 - Gender (encoded)
 - Age

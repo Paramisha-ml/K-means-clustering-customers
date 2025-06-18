@@ -1,42 +1,43 @@
-##Customer Segmentation Using KMeans Clustering
-This project demonstrates a beginner-friendly implementation of KMeans Clustering to group mall customers based on features such as age, income, gender, and spending behavior. It is built using a publicly available mall customer dataset (from Kaggle) as part of a machine learning internship task.
+#  Customer Segmentation Using K-Means Clustering
+This project implements **K-Means Clustering** to segment customers of a mall based on their behavior and demographics. It helps businesses understand their customer base, target marketing efforts better, and optimize sales strategies. The project is beginner-friendly and focuses on visualizing customer groups using unsupervised machine learning.
 
-##Dataset
-I used a Kaggle dataset in CSV format: Mall Customers Dataset – https://www.kaggle.com/datasets/vjchoudhary7/customer-segmentation-tutorial-in-python
+## Dataset
+I use the popular **Mall Customer Segmentation dataset**, which includes the following features for each customer:
+- `CustomerID`: Unique ID for each customer
+- `Gender`: Male or Female
+- `Age`: Age of the customer
+- `Annual Income (k$)`: Estimated income
+- `Spending Score (1-100)`: Score assigned based on spending habits
+The dataset is from Kaggle and used in csv format: https://www.kaggle.com/datasets/vjchoudhary7/customer-segmentation-tutorial-in-python
 
-##Features Used
-#To prepare the data, I perform the following operations:
-Original Columns	Description
-Gender	Encoded as 0 or 1 using LabelEncoder
-Age	Customer’s age in years
-Annual Income (k$)	Yearly income in thousands of dollars
-Spending Score (1–100)	Score assigned by mall based on behavior
-The final dataset contains these columns:
-Gender (0 or 1)
-Age
-Annual Income (k$)
-Spending Score (1-100)
+##  Data Preprocessing
+Before applying machine learning:
+- I check for **missing values** using `isnull().sum()`.
+- Since `Gender` is a categorical feature, we use `LabelEncoder()` to convert it to numerical format:
+  - Female = 0
+  - Male = 1
+Final features used for clustering:
+- Gender (encoded)
+- Age
+- Annual Income
+- Spending Score
 
-##Clustering Model
-I used KMeans Clustering from the sklearn.cluster module.
-Number of clusters: 3
+## Clustering with K-Means
+I use **K-Means Clustering** from `sklearn.cluster`. For simplicity, the number of clusters is set to 3:
+```python
+kmeans = KMeans(n_clusters=3, random_state=0)
 
-##Visualization
-The clusters are visualized using a scatter plot:
-X-axis: Annual Income
-Y-axis: Spending Score
-Color-coded clusters
-Matplotlib is used for plotting
+## Visualization
+To make the segmentation visually understandable, we create a 2D scatter plot:
+- X-axis: Annual Income (k$)
+- Y-axis: Spending Score (1–100)
+- Color: Cluster ID
+- Each point represents a customer
+- Uses matplotlib for plotting
 
-##Output
+## Libraries Used
+- pandas
+- matplotlib
+- sklearn (KMeans, LabelEncoder)
 
-
-##Libraries Used
-Python, pandas, matplotlib, scikit-learn
-
-##Summary
-This project is a great example for beginners learning:
-Data preprocessing with Label Encoding
-Feature selection for clustering
-Unsupervised machine learning with KMeans
-Visualizing customer segments
+## output
